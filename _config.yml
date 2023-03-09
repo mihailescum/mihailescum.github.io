@@ -1,12 +1,12 @@
-url: ""
+url: "mihailescum.github.io"
 baseurl: ""
-
 markdown: kramdown
 
 tracking_id: #
 
 header-text: Max Mihailescu
 title: Max Mihailescu
+author: Max Mihailescu
 footer: yes
 
 sass:
