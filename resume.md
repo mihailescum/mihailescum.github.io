@@ -5,9 +5,10 @@ title: Max Mihailescu - Resume
 
 cv_pdf: "#"
 ---
+
 <br />
 You can find a full CV as PDF [here]({{ page.cv_pdf | relative_url }}).
-<br />
+
 <hr />
 
 <section id="sec-education">
