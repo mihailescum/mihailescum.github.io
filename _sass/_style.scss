@@ -145,31 +145,33 @@ main {
 }
 
 @media (max-width: 500px) {
-    nav {
+    #page-header {
         text-align: center;
-        padding: 0;
-
-        li {
-            padding: 10px 0 10px 0;
-            margin: 0;
-            display: block;
-            float: none;
-            text-align: center;
-            //width: 100%;
-        }
+        padding: 50px 0 0 0;
+    }
+    
+    nav {
+        padding: 10px 0 10px 0;
+        margin: 0;
+        display: block;
+        float: none;
+        text-align: center;
+        width: 100%;
 
         li.alignable {
-            display: inline-block;
+            displax: inline-block;
         }
-
-        li.pull-left,
-        li.pull-right {
+        li.pull-left {
             float: none;
         }
-
         li.nav-list {
             margin: 0;
         }
+    }
+
+    .pull-left,
+    .pull-right {
+        float: none;
     }
 
     #header-text {
