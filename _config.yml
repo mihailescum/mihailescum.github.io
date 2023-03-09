@@ -9,6 +9,8 @@ title: Max Mihailescu
 author: Max Mihailescu
 footer: yes
 
+description: "PhD student in Mathematics at University Bonn working on O(n)-models from Statistical Mechanics."
+
 sass:
     style: compressed
     sass_dir: _sass
@@ -16,3 +18,7 @@ sass:
 plugins:
     - jekyll-sitemap
     - jekyll-tidy
+
+exclude:
+    - LICENSE
+    - README.md

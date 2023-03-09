@@ -57,6 +57,20 @@ hr {
     }
 }
 
+#page-footer {
+    font-size: small;
+    margin-bottom: 10px;
+    
+    p {
+        text-align: center;
+    }
+    
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+
 #page-nav {
     ul {
         display: inline-block;
