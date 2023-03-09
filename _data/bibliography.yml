@@ -1,8 +1,6 @@
-item1:
-  author: Max Mihailescu
-  title: Hello world publication
+Kuchler2022StatisticalAnalysisGTS:
+  author: "Küchler, D. and Mihailescu, M."
+  title: "Statistical analysis of operational data of the GTS-LHC ion source"
   year: 2022
-  journal: This is a journal
-item2:
-  author: Donald Duck
-  title: Second publication
+  journal: "Journal of Physics: Conference Series"
+  url: "https://doi.org/10.1088/1742-6596/2244/1/012022"

@@ -3,8 +3,10 @@
         {% for ref in include.references %}
         {% assign ref_data = site.data.bibliography[ref] %}
         <li>
-            {{ ref_data.author }}, "{{ ref_data.title }}"{% if ref_data.journal %}, In: <i>{{ ref_data.journal }}</i>{%
-            endif %}{% if ref_data.year %}, {{ ref_data.year }}{% endif %}.
+            {{ ref_data.author }}, "{{ ref_data.title }}"{% if ref_data.journal %}, In: <i>{{ ref_data.journal
+                }}</i>{%endif %}{% if ref_data.year %}, {{ ref_data.year }}{% endif %}.
+            {% if ref_data.preprint %}[<a href="{{ ref_data.preprint }}">preprint</a>]{% endif %}{% if ref_data.url %}
+            [<a href="{{ ref_data.url }}">Journal</a>]{% endif %}
         </li>
         {% endfor %}
     </ol>

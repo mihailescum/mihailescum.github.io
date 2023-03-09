@@ -6,24 +6,26 @@ title: Max Mihailescu - Resume
 cv_pdf: "#"
 ---
 <br />
-You can find a full CV [here]({{ page.cv_pdf | relative_url }}).
+You can find a full CV as PDF [here]({{ page.cv_pdf | relative_url }}).
+<br />
+<hr />
 
 <section id="sec-education">
-<h3 class="cv-section-header">Education</h3>
+<h2 class="cv-section-header">Education</h2>
 
 {% for item in site.data.resume.education %}
 <div class="cv-entry">
-    <h4 class="cv-entry-title">{{ item.title }} <small> | {{ item.place }} &bull; {{ item.period }}</small></h4>
+    <h3 class="cv-entry-title">{{ item.title }} <small> | {{ item.place }} &bull; {{ item.period }}</small></h3>
     {% if item.description %}<p class="cv-entry-description">{{ item.description }}</p>{% endif %}
 </div>
 {% endfor %}
 
 <section id="sec-education">
-<h3 class="cv-section-header">Work Experience</h3>
+<h2 class="cv-section-header">Work Experience</h2>
 
 {% for item in site.data.resume.work %}
 <div class="cv-entry">
-    <h4 class="cv-entry-title">{{ item.title }} <small> | {{ item.place }} &bull; {{ item.period }}</small></h4>
+    <h3 class="cv-entry-title">{{ item.title }} <small> | {{ item.place }} &bull; {{ item.period }}</small></h3>
     {% if item.description %}<p class="cv-entry-description">{{ item.description }}</p>{% endif %}
 </div>
 {% endfor %}

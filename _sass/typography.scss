@@ -41,10 +41,9 @@
     }
 
     blockquote {
-        //border: 1px solid black;
         border-left: 5px solid #333333;
         margin: 20px 0 20px 0;
-        padding: 2px 8px 2px 8px;
+        padding: 1px 8px 1px 8px;
         font-style: italic;
     }
 
@@ -80,12 +79,15 @@
     h5,
     h6 {
         font-family: 'Merriweather', serif;
-        margin-top: 1em;
-        margin-bottom: .5em;
+        font-weight: 300;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
     }
 
-    p {
-        margin-top: 0;
+    .math {
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+        font-style: italic;
     }
 }
 
@@ -96,14 +98,11 @@ Copyright (c) 2015 Joel Glovier
 published under the MIT license.
 **********/
 .cv-section-header {
-    //@include section_border;
-    margin-bottom: 2rem;
-
     &:before {
         content: "";
         display: inline-block;
         width: 40px;
-        height: 10px;
+        height: .5rem;
         margin-right: 5px;
         background-color: $accent;
     }
@@ -113,14 +112,11 @@ published under the MIT license.
     margin-bottom: 2rem;
 
     .cv-entry-title {
-        //@include sans_bold;
         margin: 0 0 .5rem;
-        //font-size: 1.5rem;
         line-height: 1;
     }
 
     .cv-entry-subtitle {
-        //font-size: 1.125rem;
         margin: 0 0 .75rem;
         line-height: 1;
     }

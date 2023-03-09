@@ -14,9 +14,6 @@ body {
     margin: 0;
     padding: 8px;
     min-height: 100vh;
-    //box-sizing: border-box;
-    //display: flex;
-    //flex-direction: column;
     //font-family: "Inconsolata";
     font-family: 'Open Sans', sans-serif;
 }
@@ -56,6 +53,7 @@ hr {
         color: #272727;
         display: inline-block;
         font-family: 'Merriweather', serif;
+        font-weight: 300;
     }
 }
 
@@ -114,9 +112,8 @@ main {
 
 /* Institute Image */
 
-.cryptedmail {
-    //:after {
-    //   content: attr(data-name) + " (at) " + attr(data-domain) + " (dot) " + attr(data-tld)
+.cryptedmail:after {
+    content: attr(data-tld) " (tod) " attr(data-domain) " (ta)";
     unicode-bidi: bidi-override;
     direction: rtl;
 }
