@@ -3,7 +3,7 @@ layout: default
 permalink: "/resume"
 title: Max Mihailescu - Resume
 
-cv_pdf: "#"
+cv_pdf: "javascript:;"
 ---
 
 <br />
