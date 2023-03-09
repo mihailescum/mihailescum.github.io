@@ -1,0 +1,184 @@
+@import "vars";
+
+/*
+ * Basic
+ */
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 8px;
+    min-height: 100vh;
+    //box-sizing: border-box;
+    //display: flex;
+    //flex-direction: column;
+    //font-family: "Inconsolata";
+    font-family: 'Open Sans', sans-serif;
+}
+
+/*.flex-wrapper {
+    //display: flex;
+    //min-height: 100vh;
+    //flex-direction: column;
+    //justify-content: flex-start;
+}*/
+
+a {
+    text-decoration: none;
+    color: $accent;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/*
+ * Navbar
+ */
+
+#page-header {
+    padding: 50px 0 0 0;
+
+    #header-text {
+        font-size: 30px;
+        color: #272727;
+        display: inline-block;
+        font-family: 'Merriweather', serif;
+    }
+}
+
+#page-nav {
+    ul {
+        display: inline-block;
+        margin: 0;
+        padding: 5px 0 5px 0;
+        margin-left: 20px;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0 16px 0 5px;
+    }
+
+    li:not(:last-child):after {
+        position: absolute;
+        content: '/';
+        padding-left: 8px;
+    }
+
+    #nav-active-page {
+        text-decoration: underline;
+    }
+}
+
+.alignable {
+    display: inline-block;
+}
+
+.pull-left {
+    @extend .alignable;
+    float: left;
+}
+
+.pull-right {
+    @extend .alignable;
+    float: right;
+}
+
+/* Divs */
+
+main {
+    min-height: 100%;
+}
+
+.container {
+    max-width: $max-width;
+    margin: auto;
+}
+
+/*#page-footer {
+    margin-top: auto;
+}*/
+
+/* Institute Image */
+
+.cryptedmail {
+    //:after {
+    //   content: attr(data-name) + " (at) " + attr(data-domain) + " (dot) " + attr(data-tld)
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+#ins-logo {
+    margin: auto;
+    display: block;
+    max-height: 100px;
+    text-align: center;
+}
+
+/* Mobile */
+
+@media (max-width: 800px) {
+    .container {
+        max-width: $med-width;
+        transition: 0.3s ease all;
+    }
+}
+
+@media (max-width: 650px) {
+    .container {
+        max-width: 83%;
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        text-align: center;
+        padding: 50px 0px 0px 0px;
+
+        li {
+            padding: 10px 0 10px 0;
+            margin: 0;
+            display: block;
+            float: none;
+            text-align: center;
+            width: 100%;
+        }
+
+        li.alignable {
+            display: inline-block;
+        }
+
+        li.pull-left {
+            float: none;
+        }
+
+        li.nav-list {
+            margin: 0;
+        }
+    }
+
+    #header-text {
+        width: 100%;
+        float: none;
+    }
+}
+
+@import "typography";
+@import "tables";

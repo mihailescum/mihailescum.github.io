@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="blog, accent, {{ site.author }}, {{ site.title }}, jekyll">
+    <meta name="author" content="{{ site.author }}">
+    {% if page.description %}
+    {% assign desc = page.description %}
+    {% else %}
+    {% assign desc = site.description %}
+    {% endif %}
+    {% if page.url %}
+    {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% else %}
+    {% assign url = site.url | append: site.baseurl | append: page.url %}
+    {% endif %}
+    <meta name="description" content="{{ desc }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Open+Sans&display=swap" rel="stylesheet">
+    <!-- <link href='https://fonts.googleapis.com/css?family=Inconsolata:400,700' rel='stylesheet' type='text/css'> -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} RSS" href="/feed.xml" />
+    <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
+    {% if site.favicon %}
+    <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
+    <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
+    {% endif %}
+    {% if site.twitter_username %}
+    <link rel="author" href="https://twitter.com/{{ site.twitter_username }}">
+    {% endif %}
+    <!-- Facebook Open Graph -->
+    <meta name="og:description" content="{{ desc }}">
+    <meta name="og:title" content="{{ site.title }}">
+    <meta name="og:url" content="{{ url }}">
+    <meta name="og:type" content="article">
+    {% if site.og_image %}
+    <meta name="og:image" content="{{ site.og_image }}">
+    {% endif %}
+    {% if site.facebook_id %}
+    <meta name="fb:admins" content="{{ site.facebook_id }}">
+    {% endif %}
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ desc }}">
+    <meta name="twitter:url" content="{{ url }}">
+    {% if site.twitter_image %}
+    <meta name="twitter:image" content="{{ site.twitter_image }}">
+    {% else %}
+    <meta name="twitter:image" content="{{ site.profile_picture }}">
+    {% endif %}
+
+    {% if page.latex %}
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          tex2jax: {
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+            inlineMath: [['$','$']]
+          }
+        });
+      </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"
+        type="text/javascript"></script>
+    {% endif %}
+</head>
+
+<body>
+    <div class="flex-wrapper">
+        {% include header.html %}
+
+        <main id="page-main">
+            <div class="container content">
+                {{ content }}
+            </div>
+        </main>
+
+        {% if site.footer == true %}
+        {% include footer.html %}
+        {% endif %}
+    </div>
+
+    {% include google_analytics.html %}
+</body>

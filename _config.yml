@@ -1,0 +1,17 @@
+url: ""
+baseurl: ""
+
+markdown: kramdown
+
+tracking_id: #
+
+header-text: Max Mihailescu
+title: Max Mihailescu
+footer: yes
+
+sass:
+    style: compressed
+    sass_dir: _sass
+
+plugins:
+    - jekyll-sitemap

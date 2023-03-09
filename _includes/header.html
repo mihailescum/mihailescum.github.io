@@ -1,0 +1,17 @@
+<header id="page-header">
+    <div class="container">
+        <a id="header-text" class="alignable pull-left" href="{{ site.url }}{{ site.baseurl }}">{{ site.header-text
+            }}</a>
+        <nav id="page-nav" class="alignable pull-right">
+            <ul>
+                {% for x in site.data.nav %}
+                <li class="alignable pull-left">
+                    <a href="{{ x.link }}" {% if page.url==x.link%} id="nav-active-page" {% endif %}>{{ x.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </nav>
+    </div>
+    <div style="clear:both"></div>
+    <hr />
+</header>
