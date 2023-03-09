@@ -147,7 +147,7 @@ main {
 @media (max-width: 500px) {
     nav {
         text-align: center;
-        padding: 50px 0px 0px 0px;
+        padding: 0;
 
         li {
             padding: 10px 0 10px 0;
@@ -155,14 +155,15 @@ main {
             display: block;
             float: none;
             text-align: center;
-            width: 100%;
+            //width: 100%;
         }
 
         li.alignable {
             display: inline-block;
         }
 
-        li.pull-left {
+        li.pull-left,
+        li.pull-right {
             float: none;
         }
 
