@@ -1,16 +1,17 @@
+# Page configuration
+header-text: Max Mihailescu
+title: Max Mihailescu
+
+# Meta data
+author: Max Mihailescu
+description: "PhD student in Mathematics at University Bonn working on O(n)-models from Statistical Mechanics."
+keywords: "Max Mihailescu, math, bonn, cv, resume"
+
+# Further configuration
 url: "mihailescum.github.io"
 baseurl: ""
 markdown: kramdown
-
-tracking_id: #
-
-header-text: Max Mihailescu
-title: Max Mihailescu
-author: Max Mihailescu
 footer: yes
-
-description: "PhD student in Mathematics at University Bonn working on O(n)-models from Statistical Mechanics."
-keywords: "Max Mihailescu, math, bonn, cv, resume"
 favicon_location: #
 
 sass:
