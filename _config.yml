@@ -10,12 +10,14 @@ author: Max Mihailescu
 footer: yes
 
 description: "PhD student in Mathematics at University Bonn working on O(n)-models from Statistical Mechanics."
+keywords: "Max Mihailescu, math, bonn, cv, resume"
+favicon_location: #
 
 sass:
     style: compressed
     sass_dir: _sass
 
-plugins:
+plugins:    
     - jekyll-sitemap
     - jekyll-tidy
 

@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="{{ site.author }}, math, bonn, cv, resume">
+    <meta name="keywords" content="{{ site.keywords }}">
     <meta name="author" content="{{ site.author }}">
     
     {%- if page.description -%}
@@ -33,8 +33,8 @@
     <link rel="stylesheet" href="{{ 'assets/css/main.css' | relative_url }}">
         
     {%- if site.favicon -%}
-    <link rel="icon" type="image/ico" href="{{ site.favicon_location }}">
-    <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location }}">
+    <link rel="icon" type="image/ico" href="{{ site.favicon_location | relative_url }}">
+    <link rel="shortcut-icon" type="image/ico" href="{{ site.favicon_location | relative_url}}">
     {%- endif -%}
     
     <!--  Social media -->
