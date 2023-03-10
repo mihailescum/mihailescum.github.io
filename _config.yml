@@ -11,7 +11,7 @@ keywords: "Max Mihailescu, math, bonn, cv, resume"
 url: "mihailescum.github.io"
 baseurl: ""
 markdown: kramdown
-footer: yes
+footer: true
 favicon_location: #
 
 sass:
