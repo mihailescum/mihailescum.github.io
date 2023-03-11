@@ -192,6 +192,10 @@ main {
         width: 100%;
         float: none;
     }
+    
+    .cryptedmail:after {
+        content: attr(data-tld) "(tod)" attr(data-domain) "(ta)";
+    }
 }
 
 @import "typography";

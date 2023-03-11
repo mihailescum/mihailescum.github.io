@@ -10,6 +10,8 @@ keywords: "Max Mihailescu, math, bonn, cv, resume"
 # Further configuration
 url: "mihailescum.github.io"
 baseurl: ""
+# This only affects local development and makes the site accessible on the whole network
+host: 0.0.0.0
 markdown: kramdown
 footer: true
 favicon_location: #

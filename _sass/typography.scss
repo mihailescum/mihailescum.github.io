@@ -3,6 +3,10 @@
 .content {
     text-align: justify;
     text-align-last: none;
+    
+    & > p {
+        margin-block-end: 1.5rem;   
+    }
 
     a:hover {
         text-decoration: underline;
