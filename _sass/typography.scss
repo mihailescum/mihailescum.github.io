@@ -2,10 +2,10 @@
 
 .content {
     text-align: justify;
-    text-align-last: none;
-    
-    & > p {
-        margin-block-end: 1.5rem;   
+    text-align-last: start;
+
+    &>p {
+        margin-block-end: 1.5rem;
     }
 
     a:hover {
@@ -103,7 +103,7 @@ published under the MIT license.
 **********/
 .cv-section-header {
     margin-bottom: 1rem !important;
-    
+
     &:before {
         content: "";
         display: inline-block;
