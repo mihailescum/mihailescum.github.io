@@ -16,6 +16,11 @@ markdown: kramdown
 footer: true
 favicon_location: #
 
+collections:
+    resume:
+        output: false
+        sort_by: start
+
 sass:
     style: compressed
     sass_dir: _sass
