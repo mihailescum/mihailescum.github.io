@@ -60,11 +60,12 @@ hr {
 #page-footer {
     font-size: small;
     margin-bottom: 10px;
-    
+
     p {
         text-align: center;
+        text-align-last: auto;
     }
-    
+
     a {
         color: inherit;
         text-decoration: underline;
@@ -163,7 +164,7 @@ main {
         text-align: center;
         padding: 50px 0 0 0;
     }
-    
+
     nav {
         padding: 10px 0 10px 0;
         margin: 0;
@@ -175,9 +176,11 @@ main {
         li.alignable {
             displax: inline-block;
         }
+
         li.pull-left {
             float: none;
         }
+
         li.nav-list {
             margin: 0;
         }
@@ -192,7 +195,7 @@ main {
         width: 100%;
         float: none;
     }
-    
+
     .cryptedmail:after {
         content: attr(data-tld) "(tod)" attr(data-domain) "(ta)";
     }

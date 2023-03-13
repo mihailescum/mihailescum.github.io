@@ -22,14 +22,18 @@ You can find a full CV as PDF <a href="{{ page.cv_pdf | relative_url }}">here</a
   <h2 class="cv-section-header">{{section.title}}</h2>
 
   {% for item in site.resume reversed %}
-  {%- if item.type == section.name -%}
-  <div class="cv-entry">
-    <h3 class="cv-entry-title">{{ item.title }} <small> | {{ item.place }} &bull; {% include cv_date_formatter.md
-        date=item.start %} &mdash; {% if item.end %}{% include cv_date_formatter.md date=item.end %}{% else %}present{%
-        endif %}</small></h3>
-    {{item.content | markdownify}}
-  </div>
-  {%- endif -%}
+    {%- if item.type == section.name -%}
+    <div class="cv-entry">
+      <h3 class="cv-entry-title">
+        {{ item.title }} 
+        <small> | {{ item.place }} &bull; {% include cv_date_formatter.md
+          date=item.start %} &mdash; {% if item.end %}{% include cv_date_formatter.md date=item.end %}{% else %}present{%
+          endif %}
+        </small>
+      </h3>
+      {%- unless item.empty -%}<div class="cv-entry-description">{{item.content | markdownify}}</div>{%-endunless-%}
+    </div>
+    {%- endif -%}
   {% endfor %}
 </section>
 {% endfor %}
