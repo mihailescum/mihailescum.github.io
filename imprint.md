@@ -10,7 +10,7 @@ layout: default
 
 > Max Mihailescu
 >
-> <span class="cryptedmail" data-domain="nnob-inu.mai" data-tld="ed">mihailescu </span>
+> lastname (at) iam.uni-bonn (dot) de
 >
 > Rheinische Friedrich-Wilhelms-Universität Bonn
 >

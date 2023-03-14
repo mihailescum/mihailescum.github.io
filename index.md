@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Max Mihailescu - About
+title: Max Mihailescu
 
 references:
     - Kuchler2022StatisticalAnalysisGTS
@@ -19,7 +19,7 @@ My background is in functional analysis and PDEs, and in my PhD work I am lookin
 
 ## Contact
 
-> <span class="cryptedmail" data-domain="nnob-inu.mai" data-tld="ed">mihailescu </span>
+> lastname (at) iam.uni-bonn (dot) de
 >
 > Office: Endenicher Allee 60, 2.053
 
