@@ -6,7 +6,7 @@
             <ul>
                 {% for x in site.data.nav %}
                 <li class="alignable pull-left">
-                    <a href="{{ x.link }}" {%- if page.url==x.link -%} id="nav-active-page" {%- endif -%}>{{ x.name }}</a>
+                    <a href="{{ x.link }}"{% if page.url==x.link %} id="nav-active-page"{% endif %}>{{ x.name }}</a>
                 </li>
                 {% endfor %}
             </ul>
