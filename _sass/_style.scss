@@ -140,6 +140,53 @@ main {
     text-align: center;
 }
 
+/*********
+CV items are derived from
+https://github.com/jglovier/resume-template
+Copyright (c) 2015 Joel Glovier
+published under the MIT license.
+**********/
+.cv-section-header {
+    margin-bottom: 1rem !important;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 40px;
+        height: .5rem;
+        margin-right: 5px;
+        background-color: $accent;
+    }
+}
+
+.cv-entry {
+    margin-bottom: 2rem;
+
+    .cv-entry-title {
+        margin: 0 0 .5rem;
+        line-height: 1;
+    }
+
+    .cv-entry-subtitle {
+        font-size: smaller;
+    }
+
+    .cv-entry-subtitle::before {
+        content: "|";
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 0;
+    }
+
+    .cv-entry-subtitle>br {
+        display: none;
+    }
+
+    .cv-entry-description {
+        margin-top: 0;
+    }
+}
+
 /* Mobile */
 
 @media (max-width: 800px) {
@@ -198,6 +245,26 @@ main {
 
     .cryptedmail:after {
         content: attr(data-tld) "(tod)" attr(data-domain) "(ta)";
+    }
+
+    blockquote {
+        text-align: left;
+    }
+
+    .references-container li {
+        text-align: left;
+    }
+
+    .cv-entry {
+        .cv-entry-subtitle::before {
+            content: "";
+        }
+
+        .cv-entry-subtitle>br {
+            display: inline;
+            //line-height: 5px !important;
+            margin-bottom: 5px;
+        }
     }
 }
 
