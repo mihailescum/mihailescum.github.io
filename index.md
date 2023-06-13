@@ -11,7 +11,7 @@ profile_picture: assets/img/2020_05_17.jpg
 ## About Me
 
 <img class="profile-picture" src="{{ page.profile_picture | relative_url }}">
-Hi! I am a first year PhD Student in Mathematics at the University of Bonn, working on <span class="math">O(n)-</span>models together with Prof. Margherita Disertori.
+I am a first year PhD Student in Mathematics at the University of Bonn, working on <span class="math">O(n)-</span>models together with Prof. Margherita Disertori.
 
 ## Research Interest
 

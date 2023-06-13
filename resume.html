@@ -12,13 +12,15 @@ sections:
   title: Work Experience
 ---
 
-<br />
-You can find a full CV as PDF <a href="{{ page.cv_pdf | relative_url }}">here</a>.
+<section id="cv-sec-introduction">
+  <br />
+  You can find a full CV as PDF <a href="{{ page.cv_pdf | relative_url }}">here</a>.
+</section>
 
-<hr />
 
 {% for section in page.sections %}
-<section id="sec-{{section.name}}">
+<br />
+<section id="cv-sec-{{section.name}}">
   <h2 class="cv-section-header">{{section.title}}</h2>
 
   {% for item in site.resume reversed %}
@@ -37,4 +39,5 @@ You can find a full CV as PDF <a href="{{ page.cv_pdf | relative_url }}">here</a
     {%- endif -%}
   {% endfor %}
 </section>
+{% if forloop.last == false %}<hr />{% endif %}
 {% endfor %}
