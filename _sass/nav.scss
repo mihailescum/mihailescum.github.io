@@ -1,0 +1,91 @@
+@import "vars";
+
+/*
+ * Navbar
+ */
+
+#page-header {
+    padding: 50px 0 0 0;
+    margin-bottom: 30px;
+
+    #header-text {
+        font-size: 30px;
+        color: #272727;
+        display: inline-block;
+        font-family: 'Merriweather', serif;
+        font-weight: 300;
+    }
+}
+
+#page-footer {
+    font-size: small;
+    margin-bottom: 10px;
+
+    p {
+        text-align: center;
+        text-align-last: auto;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: underline;
+    }
+}
+
+#page-nav {
+    ul {
+        display: inline-block;
+        margin: 0;
+        padding: 5px 0 5px 0;
+        margin-left: 20px;
+    }
+
+    li {
+        list-style-type: none;
+        margin: 0 16px 0 5px;
+    }
+
+    li:not(:last-child):after {
+        position: absolute;
+        content: '/';
+        padding-left: 8px;
+    }
+
+    #nav-active-page {
+        text-decoration: underline;
+    }
+}
+
+@media (max-width: 650px) {
+    #page-header {
+        text-align: center;
+        padding: 50px 0 0 0;
+    }
+
+    nav ul {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        padding: 10px 0 10px 0;
+        margin: 0;
+        display: block;
+        float: none;
+        text-align: center;
+        width: 100%;
+
+        li.alignable {
+            display: inline-block;
+        }
+
+        li.pull-left {
+            float: none;
+        }
+
+        li.nav-list {
+            margin: 0;
+        }
+    }
+}

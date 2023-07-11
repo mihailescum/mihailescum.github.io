@@ -13,7 +13,6 @@ sections:
 ---
 
 <section id="cv-sec-introduction">
-  <br />
   You can find a full CV as PDF <a href="{{ page.cv_pdf | relative_url }}">here</a>.
 </section>
 
@@ -29,7 +28,7 @@ sections:
       <h3 class="cv-entry-title">
         {{ item.title }}
         <span class="cv-entry-subtitle"><br />
-          {{ item.place }} &bull; {% include cv_date_formatter.md
+          {{ item.place }} &nbsp;&bull;&nbsp; {% include cv_date_formatter.md
           date=item.start %} &mdash; {% if item.end %}{% include cv_date_formatter.md date=item.end %}{% else %}present{%
           endif %}
         </span>

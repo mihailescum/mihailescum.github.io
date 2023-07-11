@@ -1,0 +1,66 @@
+@import "vars";
+
+/*********
+CV items are derived from
+https://github.com/jglovier/resume-template
+Copyright (c) 2015 Joel Glovier
+published under the MIT license.
+**********/
+.cv-section-header {
+    margin-bottom: 1rem !important;
+
+    &:before {
+        content: "";
+        display: inline-block;
+        width: 50px;
+        height: .5rem;
+        margin-right: 5px;
+        background-color: $accent;
+    }
+}
+
+.cv-entry {
+    margin-bottom: 2rem;
+
+    .cv-entry-title {
+        margin: 0 0 .7rem;
+        line-height: 1;
+    }
+
+    .cv-entry-subtitle {
+        font-size: smaller;
+    }
+
+    .cv-entry-subtitle::before {
+        content: "|";
+        margin-left: 3px;
+        margin-right: 3px;
+        padding: 0;
+    }
+
+    .cv-entry-subtitle>br {
+        display: none;
+    }
+
+    .cv-entry-description {
+        margin-top: 0;
+
+        &>p {
+            margin-top: 0;
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .cv-entry {
+        .cv-entry-subtitle::before {
+            content: "";
+        }
+
+        .cv-entry-subtitle>br {
+            display: inline;
+            //line-height: 5px !important;
+            margin-bottom: 5px;
+        }
+    }
+}
