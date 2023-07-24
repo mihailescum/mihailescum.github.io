@@ -56,10 +56,13 @@ hr {
 }
 
 #social-media-icons {
+    text-align: center;
+    text-align-last: auto;
+
     img {
         padding: 5px;
-        width: 20px;
-        height: 20px;
+        width: 24px;
+        height: 24px;
     }
 
     /* Clear floats after image containers */
